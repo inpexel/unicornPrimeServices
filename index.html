@@ -21,6 +21,23 @@
 
   <body>
 
+      <!-- navigation bar -->
+      <nav class="container-fluid-xl">
+        <div class="nav-brand">
+            <img src="/Images/unicorn Logo.png" alt="">
+            <div class="toggler"><img src="./Images/menu.svg" alt=""></div>
+        </div>
+        <div class="nav-navigation">
+            <ul>
+                <li><a href="#services" onclick="navToggle()">SERVICES</a></li>
+                <li><a href="#about" onclick="navToggle()">ABOUT</a></li>
+                <li><a href="./html/carrer.html" onclick="navToggle()">CAREER</a></li>
+                <li><a href="#contact" onclick="navToggle()">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navigation bar -->
+
     <!-- hero -->
 <header class="container hero">
   <div class="hero-content">
@@ -47,7 +64,7 @@
           <p>Professional Design Agency to provide solutions</p>
         </div>
         <div class="service-card-list">
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-duration="800">
             <span class="material-icons">photo_camera</span>
             <h3>Strategy</h3>
             <ul>
@@ -58,7 +75,7 @@
             <a href="#" class="btn-link">Read More</a>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-duration="800">
             <span class="material-icons">photo_camera</span>
             <h3>Strategy</h3>
             <ul>
@@ -69,7 +86,7 @@
             <a href="#" class="btn-link">Read More</a>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-duration="800">
             <span class="material-icons">photo_camera</span>
             <h3>Strategy</h3>
             <ul>
@@ -80,7 +97,7 @@
             <a href="#" class="btn-link">Read More</a>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-duration="800">
             <span class="material-icons">photo_camera</span>
             <h3>Strategy</h3>
             <ul>
@@ -97,7 +114,7 @@
 
     <!-- about start -->
       <div class="about-us container">
-        <div class="about__image">
+        <div class="about__image" id="about">
           <img data-aos="fade-up" data-aos-duration="800" src="./Images/about.jpg" alt="">
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="about__content">
@@ -135,7 +152,7 @@
     <!-- Professional Experience end -->
 
     <!-- contact start -->
-    <div class="container-fluid contact">
+    <div class="container-fluid contact" id="contact">
       <div class="contact-us" data-aos="fade-up" data-aos-duration="800">
         <h2>Have Any Project On Minds!</h2>
         <p>On the other hand denounce righteous indigna
@@ -233,6 +250,7 @@
     <!-- footer start -->
     <div class="container-fluid-max brand-color">
       <div class="footer">
+
         <div class=" footer__links footer__services">
           <h3>Services</h3>
           <a href="#">amazon services</a>
