@@ -96,20 +96,7 @@ li{
     font-size: 1.8rem;
     color: var(--gray);
     margin-bottom: 13px;
-    /* list-style-type: none; */
 }
-
-/* li::before{
-    content: "\00bb";
-    position: relative;
-    margin-right: 10px;
-    background-color: var(--brand-color);
-    padding: 6px 8px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: white;
-} */
 
 body{
     min-width: 100vw;
@@ -358,19 +345,6 @@ nav{
     }
 }
 
-/* 
-@media screen and (min-width:992px) {
-    .hero-image img{
-        max-width: 500px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .hero-image img{
-        max-width: 500px;
-    }
-} */
-
 
 /* buttons */
 .btn{
@@ -467,22 +441,8 @@ nav{
 }
 
 .service-card:hover{
-    /* background-color: var(--brand-color); */
-    /* color: var(--white); */
     box-shadow: 0 0 20px var(--brand-color);
 }
-
-/* .service-card::before{
-    content: '';
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    background-color: rgba(255, 255, 255, 0.045);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    z-index: 0;
-} */
 
 .service-card span{
     color: var(--brand-color);
@@ -494,12 +454,10 @@ nav{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
 }
 
 .service-card li{
     list-style-type: none;
-    /* list-style-image: url('-->'); */
     list-style-position: inside;
     margin-bottom: 10px;
 }
@@ -510,12 +468,6 @@ nav{
     font-size: 3rem;
     color: var(--brand-color);
 }
-
-/* .service-card li img{
-    width: 24px;
-    margin-right: 10px;
-    display: inline-bl;
-} */
 
 .service-card li:last-child{
     margin-bottom: 20px;
@@ -567,13 +519,11 @@ nav{
 .about__content li{
     display: flex;
     gap: 10px;
-    /* justify-content: center; */
     align-items: center;
     font-weight: 600;
     color: var(--gray-dark);
     list-style-position: inside;
     list-style-type: none;
-    /* list-style-image: url("/Images/green\ tick.svg"); */
 }
 
 .about__content li img{
@@ -819,12 +769,6 @@ nav{
         padding: 60px 45px 53px;
         border-radius: 5px;
     }
-    /* .num-card-list{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    } */
 }
 
 /* partners */
