@@ -196,6 +196,21 @@ img{
     } 
 }
 
+/* whatsapp */
+
+.whatsapp img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    z-index: 1000;
+    transition: transform 300ms ease;
+}
+
+.whatsapp img:hover{
+    transform: translateY(-10px);
+}
+
 
 /* navigation */
 
@@ -208,7 +223,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 40px;
+    padding: 10px 24px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.189);
     /* backdrop-filter: blur(10px); */
@@ -224,13 +239,13 @@ nav{
 }
 
 .toggler img{
-    height: 70px;
+    height: 40px;
     margin: 10px;
     cursor: pointer;
 }
 
 .nav-brand img:first-child{
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .nav-navigation ul{
@@ -244,7 +259,8 @@ nav{
 
 .nav-navigation li{
     display: none;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    font-weight: 500;
     padding: 10px 2px;
     list-style-type: none;
     transition: all 200ms ease-out;
@@ -274,6 +290,9 @@ nav{
 }
 
 @media screen and (min-width:992px) {
+    .nav-brand img:first-child{
+        max-width: 200px;
+    }
     nav{
         flex-direction: row;
         justify-content: center;
@@ -444,26 +463,26 @@ nav{
     border-radius: 8px;
     text-align: left;
     padding: 50px 35px 40px;
-    transition: all 300ms ease-out;
+    transition: all 300ms ease;
 }
 
-.service-card::before{
+.service-card:hover{
+    /* background-color: var(--brand-color); */
+    /* color: var(--white); */
+    box-shadow: 0 0 20px var(--brand-color);
+}
+
+/* .service-card::before{
     content: '';
     position: absolute;
     top: 20%;
     right: 5%;
-    /* transform: translate(-80%, -50%); */
     background-color: rgba(255, 255, 255, 0.045);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     z-index: 0;
-}
-
-.service-card:hover{
-    background-color: var(--brand-color);
-    color: var(--white);
-}
+} */
 
 .service-card span{
     color: var(--brand-color);
@@ -485,11 +504,18 @@ nav{
     margin-bottom: 10px;
 }
 
-.service-card li img{
+.service-card li::before{
+    content: '\2192';
+    margin-right: 8px;
+    font-size: 3rem;
+    color: var(--brand-color);
+}
+
+/* .service-card li img{
     width: 24px;
     margin-right: 10px;
     display: inline-bl;
-}
+} */
 
 .service-card li:last-child{
     margin-bottom: 20px;
@@ -761,7 +787,7 @@ nav{
 }
 
 .num-card span:last-of-type{
-    font-size: 5.5rem;
+    font-size: 5rem;
 }
 
 .num-card p{
@@ -853,6 +879,7 @@ nav{
 }
 
 .footer__links a{
+    display: flex;
     text-decoration: none;
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.601);
@@ -865,7 +892,7 @@ nav{
     transform-origin: center;
 }
 
-.footer__links span{
+.footer__links span, .footer__links ion-icon{
     margin-right: 10px;
     color: white;
 }
