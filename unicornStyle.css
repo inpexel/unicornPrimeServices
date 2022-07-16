@@ -305,7 +305,7 @@ nav{
 
 @media screen and (min-width:2000px){
     nav{
-        padding: 0 400px;
+        padding: 20px 400px;
     }
 }
 
@@ -634,7 +634,7 @@ nav{
     gap: 30px;
 }
 
-.contact-form-inputs input, select,option{
+.contact-form-inputs input, select,option,textarea{
     padding: 18px 30px;
     width: 100%;   
     border-radius: 5px;
@@ -649,7 +649,11 @@ nav{
     color: var(--heading);
 }
 
-.contact-form-inputs input:focus, select:focus,option:focus{
+textarea{
+    resize: vertical;
+}
+
+.contact-form-inputs input:focus, select:focus,option:focus, textarea:focus{
     outline: 4px solid #bd121249;
     border: 1px solid var(--brand-color);
 }
