@@ -256,7 +256,7 @@ nav{
 
 .nav-navigation a{
     text-decoration: none;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--heading);
 }
 
@@ -300,6 +300,11 @@ nav{
     .nav-navigation li{
         display: block;
         border-bottom: none;
+    }
+
+    .nav-navigation li:hover{
+        transform: translateY(-6px);
+        text-decoration: underline;
     }
 }
 
@@ -425,6 +430,11 @@ nav{
     color: var(--blue);
 }
 
+.btn-link::after{
+    content: "\00bb";
+    position: relative;
+}
+
 .btn-outline-primary{
     border: 2px solid var(--brand-color);
     color: var(--brand-color);
@@ -441,11 +451,6 @@ nav{
     background-color: var(--brand-color);
     color: var(--white);
     transform: translate(0, -10px);
-}
-
-.btn-link::after{
-    content: "\00bb";
-    position: relative;
 }
 
 /* service */
@@ -489,11 +494,7 @@ nav{
     border-radius: 8px;
     text-align: left;
     padding: 50px 35px 40px;
-    transition: all 300ms ease;
-}
-
-.service-card:hover{
-    box-shadow: 0 0 20px var(--brand-color);
+    transition: box-shadow 1000ms ease;
 }
 
 .service-card span{
@@ -529,12 +530,24 @@ nav{
     font-size: 1.8rem;
 }
 
+.service-card a:hover{
+    color: var(--brand-color);
+}
+
 @media screen and (min-width:768px) {
     .container-fluid{
         max-width: var(--breakpoint-md);
     }
     .service-card{
         width: 40%;
+    }
+
+    .eCommerceListing .service-card{
+        max-width: 300px;
+    }
+
+    .service-card:hover{
+        box-shadow: 0 0 20px var(--brand-color);
     }
 }
 
@@ -939,3 +952,35 @@ textarea{
     width: 100%;
 }
 
+
+/* eCommerce Services */
+
+.eCommerceServicesList{
+margin-top: 50px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;   
+}
+
+.ecommerceService{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.244);
+    border-radius: 5px;
+    width:100%;
+    height: 200px;
+    transition: all 300ms ease;
+}
+
+.ecommerceService > div{
+    display: flex;
+    gap: 20px;
+}
+
+.ecommerceService p{
+    margin-top: 8px;
+    /* max-width: 50ch; */
+}
