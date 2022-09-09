@@ -252,6 +252,22 @@ nav{
     list-style-type: none;
     transition: all 200ms ease-out;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
+    position: relative;
+}
+
+.nav-navigation li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: var(--brand-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 300ms;
+}
+
+.nav-navigation li:hover::after{
+    width: 100%;
 }
 
 .nav-navigation a{
@@ -302,10 +318,6 @@ nav{
         border-bottom: none;
     }
 
-    .nav-navigation li:hover{
-        transform: translateY(-6px);
-        text-decoration: underline;
-    }
 }
 
 @media screen and (min-width:2000px){
