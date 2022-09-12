@@ -13,10 +13,10 @@ toggler.addEventListener('click', navToggle);
 
 function toggleNavBackground(){
     let scrollValue = window.scrollY;
-    if(scrollValue > 200){
+    if(scrollValue > 100){
         nav.classList.add('navigation');
     }
-    if(scrollValue < 200){
+    if(scrollValue < 100){
         nav.classList.remove('navigation')
     }
 }
